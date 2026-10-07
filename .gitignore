@@ -1,0 +1,52 @@
+# Local environment and credentials (only the safe example is tracked).
+.env
+.env.*
+!.env.example
+auth.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Composer dependencies are installed locally. Keep composer.json/lock tracked.
+/vendor/
+/node_modules/
+
+# Runtime data: preserve empty-directory markers and access protection.
+/writable/**
+!/writable/**/
+!/writable/**/index.html
+!/writable/**/.htaccess
+!/writable/**/.gitkeep
+
+# Reference projects are not part of the active application.
+/professor_refs/
+
+# Exclude database dumps; allow only the reviewed schema-only setup file.
+*.sql
+!/database/schema.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Local tools, editor settings, temporary files, and test output.
+/.codex/
+/.agents/
+/.idea/
+/.vscode/
+/.phpunit.cache/
+/.phpunit.result.cache
+/build/
+/coverage/
+/tmp/
+/temp/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
